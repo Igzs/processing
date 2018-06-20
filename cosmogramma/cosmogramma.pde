@@ -35,7 +35,7 @@ void draw()
 {
   circles.beginDraw();
    translate(width/2,height/2);
-  int circleSize = constrain(mouseX,0,150);
+  int circleSize = 150;
   /** Dessin cercles **/ 
   fill(179,183,166);
   noStroke();
