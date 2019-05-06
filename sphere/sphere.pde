@@ -1,6 +1,6 @@
  PImage texture; 
  PShape sphere;
- 
+ float rotation=0.0;
 void setup() { 
   size(600, 600, P3D); 
   background(0); 
@@ -14,7 +14,9 @@ void setup() {
 void draw() {
   background(0);
   translate(width/2, height/2);
-  rotateY(map(mouseX,0,width,-PI,PI));
-  rotateX(map(mouseY,0,width,-PI,PI));
+  rotateY(PI/3+rotation);
+  //rotateY(map(mouseX,0,width,-PI,PI));
+  //rotateX(map(mouseY,0,width,-PI,PI));
   shape(sphere);
+  rotation=rotation+0.02;
 }
